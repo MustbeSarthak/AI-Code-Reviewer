@@ -57,21 +57,21 @@ Unlike a linter, which relies on fixed rules, this project uses an **AI agent wo
 The two-panel workspace: paste code, choose a language, and hit **Review Code**.
 
 <!-- Add screenshot here -->
-`docs/screenshots/code-review.png`
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/a3cf0a53-a5e9-47e2-8dde-93423640faae" />
 
 ### Review Results
 
 Overall score plus per-category cards for readability, security, and bug risk, each with its own suggestion list.
 
 <!-- Add screenshot here -->
-`docs/screenshots/review-results.png`
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/fa75ec81-95c0-48d6-adbc-f06f981317c9" />
 
 ### Loading & Error States
 
 In-flight feedback while the LangGraph pipeline runs, and the retry experience when an analysis fails.
 
 <!-- Add screenshot here -->
-`docs/screenshots/loading-error-states.png`
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/3dc62a14-0e58-4e98-b741-8475ac7df31b" />
 
 ---
 
