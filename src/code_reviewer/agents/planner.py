@@ -26,6 +26,11 @@ def planner(state:ReviewCode):
 
     Decide which types of code review should be performed"""
 
-    plan = planner_llm.invoke(prompt)
+    try:
+        plan = planner_llm.invoke(prompt)
+    except Exception:
+        # Some models intermittently answer without a tool call. Fall back to a
+        # full review plan rather than failing the whole workflow.
+        plan = ReviewPlan(bugs=True, security=True, quality=True, complexity=True)
 
-    return{"review_plan":plan}
+    return {"review_plan": plan}
